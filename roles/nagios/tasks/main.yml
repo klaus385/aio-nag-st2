@@ -497,7 +497,7 @@
     - st2
 
 - name: st2-register-rules
-  command: st2ctl reload --register-rules
+  command: st2ctl reload --register-actions
   delegate_to: stackstorm
   tags:
     - st2_register_rules

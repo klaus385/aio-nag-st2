@@ -2,7 +2,8 @@
   become: true
   command: "{{ item }}"
   with_items:
-    - st2ctl reload --register-all
+      #- st2ctl reload --register-all
+    - st2ctl reload --register-actions
     - st2ctl restart
 
 - name: restart st2api/st2stream
